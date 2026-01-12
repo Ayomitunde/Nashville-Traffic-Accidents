@@ -1,0 +1,21 @@
+                                    Nashville Traffic Accidents (2018 - 2025)
+This analysis examines 172927 traffic accidents recorded in Nashville, Tennessee, from Jan 2018 to August 2025. The key findings include:
+a. Total accidents recorded regionally sharply dropped in 2020 due to the COVID-19 lockdown, it recovered partially between 2021 - 2023, and it has since fallen to its lowest levels between 2024 - till date.
+b. Weekends especially Friday - Sunday Nights are the most dangerous times to drive.
+c. Most accidents occur in clear weather and daylight, poor weather does not have any effect in the occurence of crashes
+d. Accidents are highly concentrated in dense urban core and along major interstates
+e. The vast majority of accidents are ordinary "motor vehicle in transport" i.e car hits car, with hit and run becoming a major and fast rising sub category
+f. The south precinct consistently records the highest number of injuries and fatalities(except in 202, where Hermit precinct briefly overttok it)
+
+This shows that the volume of exposure(vehicles, people) and driver behaviour drive a vast majority of crashes and not weather or road design alone.\
+
+#Recommendations
+a. The Government should priortize urban core & interstate corridors for enforcement and engineering improvements.
+b. Weekends nights enforcement especially Friday - Sunday Night 9pm - 3am  offers the highest potential lives saved.
+c. Expand hit and run detectment  via red/speed cameras, licence plate readers and public report campaigns.
+d. Driver behaviour campaigns should emphasize "clear weather != safe driving"
+
+Takeaways 
+# This analysis has shown that in Nashville, dramatic situations are not responsible for crashes, it is ordinary drivers colliding with each other in ordinary conditions. These accidents are msotly concentrated where ordinary people live.
+# Nashville should target these high exposure times and locations with smart enforcement, engineering and education, and with these, the city can continue with its impressive downward trajectory in traffic collisions, injuries and deaths.
+

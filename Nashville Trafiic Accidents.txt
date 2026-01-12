@@ -1,0 +1,29 @@
+                                    Nashville Traffic Accidents : A report on Accidents Collision(2018 - 2025)
+#Steps 
+1. importing libraries and reading the dataset
+2. the original dataset contains 230442 rows and 27 columns before it was cleaned and formated properly
+3. checking column name, type , percentage of missing values:
+    method used - for cols in df:
+                        print(f"Column: {col:35} | type:{str(df[cols].dtype):7} | missing_values% {df[cols].isna().sum()/len(df) * 100}")
+4. for this dataset, only one feature had a significant amount of missing values [Property Damage - 91.82%]
+5. After cross checking the metadata file, it is apparent that features like ObjectId, Weather, IlluACCIDmination, Collision Type, x, y, do not exist in the original dataset. They are to be dropped to avoid confusion
+6. All other features have missing values of less than 20%, for this df.dropna will be an apporiate method/function to apply
+7. No duplicates were found in the dataset
+8. After data cleaning, the dataset has 172927 rows and 27 columns
+
+#Insights 
+1. the sharp decline of accidents can be attributed to the COVID-19 lockdown since there was a reduction in traffic/travels worldwide.
+2. the slight rise between 2021-2023 can be atrributed to lifts in restrictions aftter the lockdown 
+3. The decline between 2024 -2025 could indicate implementation of stricter regulations, road safety improvements 
+4. The most common type of collision is Front to Rear
+    b. between 2018 - 2024, the most comm0n collision type had been Front to Rear, nut in 2025 it changed to Angle
+5. To sort days chronologically :
+        day_order = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+        daily_occurence['Day'] = pd.Categorical(daily_occurence['Day'], categories = day_order, ordered = True)
+        daily_occurence = daily_occurence.sort_values('Day').reset_index(True)
+6. Weekends are the most dangerous time to drive, especially at night {Friday Night - 9603, Saturday Night - 10086, Sunday Night - 9592}. On the contary, mornings are the safest time to drive; the number of accidents that occur in the mornings have been consistently low compared to other time periods
+7. Clear Weather != Safe driving, most accidents occur on a clear day with clear weather 
+8. The table visualization shows that the south precinct has the most recorded figures in Fatalities, Injuries, Motor Vehicles involved, but in 2020, hermit precinct had the highest number of recorded Fatalities.
+9. The map visualization show that these accidents are overwhemingly concentrated in the urban areas(downtown, Midtown, Music Row, The Gulch, and East Nashville). it should also be noted that highways seve as accident corridors. From a quick google search, most of Nashville's Population is located on The Cumberland river, therefor it
+can be posulated that accidents happen in these areas not because of dangerous roads/ bad road network, they happen because 90% of driving and the people are there.
+10. The most common type of accident cause has been motor vehicles that are in transport. It is not as dramatic as "ran off the road" or "hit a pole" as people imagine. it is also of note that hit and run reports are also a massive problem. Government agencies should enforce cctv, license plate readers amd public awareness campaigns. This would have huge impact in reduction of Accidents Collision 
